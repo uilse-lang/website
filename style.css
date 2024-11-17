@@ -1,0 +1,226 @@
+.tab img{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin-left: 50px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: move;
+    transition: 0.3s;
+}
+.tab img:hover{
+    width: 202px;
+    height: 202px;
+    border: 1px solid rgba(0, 0, 0, 0.488);
+    box-shadow: rgba(0, 0, 0, 0.453) 2px 5px 15px;
+}
+.tab ul{
+    margin-top: 20px;
+}
+.menu i{
+    font-size: 40px;
+    color: rgb(238, 238, 238);
+}
+.close i{
+    font-size: 40px;
+    color: rgb(238, 238, 238);
+}
+.menu, .close{
+    border-radius: 100%;
+    border: 0px;
+
+}
+.close{
+    margin-top: 5px;
+    margin-left: 250px;
+    width: 0px;
+    height: 0px;
+    transition: 1s;
+}
+.menu{
+    margin-top: 5px;
+    margin-left: 10px;
+    transition: 0.5s;
+    width: 0px;
+    height: 0px;
+}
+.Home img{
+    height: 100%;
+    width: 100%;
+}
+.About h3{
+    color: rgb(128, 136, 143);
+    font-size: 15px;
+    padding-bottom: 50px;
+    padding-top: 30px;
+}
+.tab{
+    width: 300px;
+    height: 100vh;
+    border: 1px solid none;
+    position: fixed;
+    top: 0;
+    background-color: hsla(0, 0%, 75%, 0.338);
+    left: -300px;
+    transition: 0.5s;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.tab ul{
+    list-style-type: none;
+}
+.tab ul li{
+    margin-bottom: 15px;
+}
+.tab ul li a{
+    color: #000;
+    text-decoration: none;
+    font-size: 20px;
+    transition: 0.4s;
+}
+.tab ul li:hover a{
+    position: relative;
+    left: 10px;
+    color: rgba(237, 237, 237, 0.96);
+    text-decoration: underline;
+    font-weight: bold;
+}
+.Home, .About, .Project, .Skills, .Contact{
+    height: 100vh;
+    width: 100%;
+}
+.About{
+    background-color: rgb(42, 37, 31);
+}
+.Skills img{
+    height: 100vh;
+    width: 100%;
+}
+.Contact{
+    background-color: rgb(51, 51, 144);
+}
+.Skills h1{
+    position: relative;
+    bottom: 600px;
+    text-align: center;
+    color: rgb(255, 246, 215);
+}
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 350px;
+    row-gap: 30px;
+    max-width: 800px; 
+    margin-left: 80px; 
+    padding: 20px;
+    position: relative;
+    bottom: 550px;
+}
+.skill{
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.progress {
+    background-color: #e0e0e0; 
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 5px;
+    min-width: 400px; 
+}
+
+.progress-bar {
+    background-color: black; 
+    height: 20px;
+    line-height: 20px;
+    color: white;
+    min-width: 300px; 
+    transition: width 0.3s ease; 
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.menu{
+    position: fixed;
+    top: 0;
+    transition: 2s;
+}
+html{
+    scroll-behavior: smooth;
+}
+.Home h1{
+    position: relative;
+    bottom: 530px;
+    margin-left: 308px;
+    color: rgba(236, 236, 236, 0.741);
+    font-style: italic;
+}
+.tab h2{
+    text-align: center;
+    color: rgb(207, 207, 207);
+    font-style: italic;
+    cursor: not-allowed;
+    transition: 0.4s;
+}
+.tab h2:hover{
+    box-shadow: rgba(0, 0, 0, 0.3) 5000px 500px 2px;
+}
+.About img{
+    width: 450px;
+    height: 500px;
+    margin-top: 50px;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.About h2{
+    color: aliceblue;
+    font-style: italic;
+    margin-top: 50px;
+
+}
+.projects{
+    padding: 50px 0;
+    text-align: center;
+    background-color: #473d28;
+}
+
+.projects h2 {
+    color: white;
+    font-style: italic;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.project-item {
+    width: 300px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(69, 69, 69, 0.105);
+}
+
+.project-item img {
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.project-item:hover img {
+    transform: scale(1.05);
+}
+
+.project-item h3 {
+    margin: 10px 0;
+    font-size: 1.5em;
+    color: #000000;
+}
